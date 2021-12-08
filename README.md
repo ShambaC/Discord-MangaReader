@@ -1,4 +1,4 @@
-# MD Embed BOT
+# MangaReader BOT
 
 Complete source code for the discord BOT MangaReader.
 
