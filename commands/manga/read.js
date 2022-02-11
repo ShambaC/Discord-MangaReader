@@ -56,7 +56,14 @@ module.exports = {
 
             if(typeof chapter.chapter === "undefined")   return;
             
-            var pages = await chapter.getReadablePages();
+            var pages;
+            try {
+                pages = await chapter.getReadablePages();
+            }
+            catch(err)
+            {
+                return message.channel.send(err.message);
+            }
 
             const {author, channel} = message;
             const generateEmbed = async start => {

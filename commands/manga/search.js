@@ -155,8 +155,9 @@ module.exports = {
                             })
                             
                         })
-                        .catch(collected => {
-                            message.channel.send(`❌ Timeout ! Try again !`);
+                        .catch(err =>{
+                            if(typeof(err.message) == 'undefined')  message.channel.send(`❌ Timeout ! Try again !`);
+                            else    message.channel.send(err.message);
                         });
                     }
                 })

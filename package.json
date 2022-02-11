@@ -2,7 +2,7 @@
   "name": "Mangareader",
   "main": "main.js",
   "author": "ShambaC",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/ShambaC/Discord-MangaReader.git",
   "description": "A complete code to download for a cool Discord bot for reading manga.",
   "scripts": {
